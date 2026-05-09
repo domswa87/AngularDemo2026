@@ -1,0 +1,15 @@
+<section class="concept-page">
+  <h2 class="topic-title">Signals (writable)</h2>
+  <p class="explain">
+    A <strong>signal</strong> holds a value. Read it in the template with <code>()</code>: <code>mood()</code>.
+    Change it with <code>.set()</code> or <code>.update()</code>.
+  </p>
+  <pre class="snippet">readonly mood = signal('okay');</pre>
+  <div class="demo">
+    <!-- ★ THIS LESSON: reading a signal — always call it like a function: mood() -->
+    <p><strong>Current mood:</strong> {{ mood() }}</p>
+    <!-- Event binding only — see Event binding lesson; handler is makeGreat() in signals-intro.ts -->
+    <button type="button" class="demo-btn" (click)="makeGreat()">Set mood to “great”</button>
+  </div>
+  <p class="note"><code>(click)</code> is event binding — covered on its own page.</p>
+</section>

@@ -1,0 +1,15 @@
+<section class="concept-page">
+  <h2 class="topic-title">Computed signals</h2>
+  <p class="explain">
+    <code>computed()</code> builds a <strong>derived</strong> value from other signals. When those signals change,
+    the computed value updates automatically.
+  </p>
+  <pre class="snippet"><code>{{ codeSample }}</code></pre>
+  <div class="demo">
+    <!-- ★ THIS LESSON: computed value — read like any signal: label() -->
+    <p><strong>Derived label:</strong> {{ label() }}</p>
+    <!-- Updates `apples` only; label() follows automatically (see computed() in computed-signal.ts) -->
+    <button type="button" class="demo-btn" (click)="addApple()">Add one apple</button>
+  </div>
+  <p class="note">We only change <code>apples</code>; <code>label</code> stays in sync by itself.</p>
+</section>

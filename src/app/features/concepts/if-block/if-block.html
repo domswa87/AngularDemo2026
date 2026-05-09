@@ -1,0 +1,20 @@
+<section class="concept-page">
+  <h2 class="topic-title">Conditional blocks (<code>&#64;if</code>)</h2>
+  <p class="explain">
+    Built-in control flow: wrap HTML in <code>&#64;if (condition)</code> so Angular only creates that DOM when the
+    condition is true. When it turns false, that piece is removed again.
+  </p>
+  <pre class="snippet"><code>{{ codeSample }}</code></pre>
+  <div class="demo">
+    <!-- Supporting only — Event binding lesson -->
+    <button type="button" class="demo-btn" (click)="toggleTip()">Toggle bonus paragraph</button>
+    <!-- ★ THIS LESSON: block renders only while showTip is true (see if-block.ts) -->
+    @if (showTip) {
+      <p class="bonus">You are seeing this because <code>&#64;if (showTip)</code> is active.</p>
+    }
+  </div>
+  <p class="note">
+    We used a plain boolean so this page stays about <code>&#64;if</code>. You can put any expression inside the
+    parentheses, including <code>someSignal()</code> once you know signals.
+  </p>
+</section>

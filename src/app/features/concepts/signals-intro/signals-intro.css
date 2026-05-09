@@ -1,0 +1,14 @@
+.demo-btn {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: #fff;
+}
+
+.demo-btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}

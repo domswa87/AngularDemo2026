@@ -1,0 +1,17 @@
+<section class="concept-page">
+  <h2 class="topic-title">Event binding</h2>
+  <p class="explain">
+    Parentheses listen to DOM events: <code>(event)="handler()"</code>. Angular runs your method when the event
+    fires.
+  </p>
+  <!-- ★ THIS LESSON: (click) runs the component method when the user clicks -->
+  <pre class="snippet">&lt;button type="button" (click)="onButtonClick()"&gt;Tap&lt;/button&gt;</pre>
+  <div class="demo">
+    <!-- ★ THIS LESSON: live example — compare with onButtonClick() in event-binding.ts -->
+    <button type="button" class="demo-btn" (click)="onButtonClick()">Tap me</button>
+    <p class="note">Handler ran {{ clicks }} time(s).</p>
+  </div>
+  <p class="note">
+    The count uses interpolation only to prove the handler ran — see the Interpolation page for that syntax.
+  </p>
+</section>

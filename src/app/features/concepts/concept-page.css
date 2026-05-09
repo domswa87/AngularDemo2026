@@ -1,0 +1,65 @@
+.concept-page {
+  max-width: 42rem;
+}
+
+.topic-title {
+  margin-top: 0;
+  font-size: 1.35rem;
+}
+
+.explain {
+  color: #475569;
+  line-height: 1.65;
+  margin: 0 0 1rem;
+}
+
+.explain code {
+  font-size: 0.92em;
+  background: #f1f5f9;
+  padding: 0.12rem 0.35rem;
+  border-radius: 4px;
+}
+
+.demo {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.snippet {
+  display: block;
+  margin: 0 0 0.75rem;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  background: #1e293b;
+  color: #e2e8f0;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.note {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.field-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #334155;
+}
+
+.demo input[type='text'] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.5rem 0.65rem;
+  font: inherit;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}

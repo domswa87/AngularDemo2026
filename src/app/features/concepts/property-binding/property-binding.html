@@ -1,0 +1,14 @@
+<section class="concept-page">
+  <h2 class="topic-title">Property binding</h2>
+  <p class="explain">
+    Square brackets mean “set this DOM property from the component”: <code>[property]="value"</code>.
+    Here we bind the input’s <code>value</code>.
+  </p>
+  <!-- ★ THIS LESSON: [value]="label" — bind component → native input value property -->
+  <pre class="snippet">&lt;input type="text" readonly [value]="label" /&gt;</pre>
+  <div class="demo">
+    <label class="field-label" for="demo-input">Read-only input</label>
+    <!-- ★ THIS LESSON: same binding as the snippet above -->
+    <input id="demo-input" type="text" readonly [value]="label" />
+  </div>
+</section>
