@@ -1,0 +1,19 @@
+.for-list {
+  margin: 0;
+  padding-left: 1.35rem;
+  line-height: 1.55;
+}
+
+.for-list li + li {
+  margin-top: 0.35rem;
+}
+
+.task-id {
+  display: inline-block;
+  min-width: 4.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #64748b;
+  text-transform: uppercase;
+}

@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 
 import { ComputedSignalConcept } from './features/concepts/computed-signal/computed-signal';
 import { EventBindingConcept } from './features/concepts/event-binding/event-binding';
+import { ForLoopConcept } from './features/concepts/for-loop/for-loop';
 import { IfBlockConcept } from './features/concepts/if-block/if-block';
 import { InterpolationConcept } from './features/concepts/interpolation/interpolation';
 import { PropertyBindingConcept } from './features/concepts/property-binding/property-binding';
@@ -19,6 +20,7 @@ export const routes: Routes = [
   { path: 'concepts/signals', component: SignalsIntroConcept },
   { path: 'concepts/computed', component: ComputedSignalConcept },
   { path: 'concepts/if-block', component: IfBlockConcept },
+  { path: 'concepts/for-loop', component: ForLoopConcept },
   // ★ ROUTING LESSON: nested routes — parent shell + child URLs screen-a / screen-b
   {
     path: 'concepts/routing',

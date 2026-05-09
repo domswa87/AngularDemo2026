@@ -1,0 +1,21 @@
+<section class="concept-page">
+  <h2 class="topic-title">Lists (<code>&#64;for</code>)</h2>
+  <p class="explain">
+    Use <code>&#64;for</code> to repeat a chunk of HTML for each item in a collection. Angular needs a
+    <code>track</code> expression so it can reuse DOM efficiently when rows move, appear, or disappear (
+    <strong>always give each row a stable identity</strong> — often an <code>id</code> field).
+  </p>
+  <pre class="snippet"><code>{{ loopSnippet }}</code></pre>
+  <div class="demo">
+    <!-- ★ THIS LESSON: repeats one <li> per task — track ties each row to task.id -->
+    <ul class="for-list">
+      @for (task of tasks; track task.id) {
+        <li><span class="task-id">{{ task.id }}</span> {{ task.label }}</li>
+      }
+    </ul>
+  </div>
+  <p class="note">
+    Related idea: <code>&#64;empty</code> blocks after <code>&#64;for</code> handle “no items” UX — see the Angular
+    docs when you need an empty state.
+  </p>
+</section>
