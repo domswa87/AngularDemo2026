@@ -5,6 +5,9 @@ import { EventBindingConcept } from './features/concepts/event-binding/event-bin
 import { IfBlockConcept } from './features/concepts/if-block/if-block';
 import { InterpolationConcept } from './features/concepts/interpolation/interpolation';
 import { PropertyBindingConcept } from './features/concepts/property-binding/property-binding';
+import { RoutingDemoScreenA } from './features/concepts/routing-intro/demo-screen-a';
+import { RoutingDemoScreenB } from './features/concepts/routing-intro/demo-screen-b';
+import { RoutingIntroConcept } from './features/concepts/routing-intro/routing-intro';
 import { SignalsIntroConcept } from './features/concepts/signals-intro/signals-intro';
 import { Home } from './features/home/home';
 
@@ -16,5 +19,15 @@ export const routes: Routes = [
   { path: 'concepts/signals', component: SignalsIntroConcept },
   { path: 'concepts/computed', component: ComputedSignalConcept },
   { path: 'concepts/if-block', component: IfBlockConcept },
+  // ★ ROUTING LESSON: nested routes — parent shell + child URLs screen-a / screen-b
+  {
+    path: 'concepts/routing',
+    component: RoutingIntroConcept,
+    children: [
+      { path: '', pathMatch: 'full', redirectTo: 'screen-a' },
+      { path: 'screen-a', component: RoutingDemoScreenA },
+      { path: 'screen-b', component: RoutingDemoScreenB },
+    ],
+  },
   { path: '**', redirectTo: '' },
 ];

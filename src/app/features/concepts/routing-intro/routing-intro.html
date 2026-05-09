@@ -1,0 +1,28 @@
+<section class="concept-page">
+  <h2 class="topic-title">Routing</h2>
+  <p class="explain">
+    Angular maps <strong>URLs</strong> to <strong>components</strong>. You declare that map in a
+    <code>Routes</code> array (here: <code>src/app/app.routes.ts</code>). When the URL changes, the router swaps
+    whichever component matches — often inside a <code>router-outlet</code>.
+  </p>
+  <pre class="snippet"><code>{{ routesTableSnippet }}</code></pre>
+  <p class="explain">
+    In templates, <code>routerLink</code> navigates without a full page reload. Example:
+    <code>{{ routerLinkSnippet }}</code> — Relative links append to the current parent route (
+    <code>/concepts/routing/...</code>). The matching child component is drawn where you put
+    <code>{{ outletSnippet }}</code>.
+  </p>
+  <div class="demo routing-demo">
+    <!-- ★ THIS LESSON: declarative navigation — updates URL + activates a child route -->
+    <nav class="routing-nav" aria-label="Nested routing demo">
+      <a routerLink="screen-a" routerLinkActive="active" class="routing-tab">Screen A</a>
+      <a routerLink="screen-b" routerLinkActive="active" class="routing-tab">Screen B</a>
+    </nav>
+    <!-- ★ THIS LESSON: outlet hosts RoutingDemoScreenA or RoutingDemoScreenB from app.routes.ts -->
+    <router-outlet />
+  </div>
+  <p class="note">
+    The shell around every page uses the same pattern: see <code>app.html</code> → <code>&lt;router-outlet /&gt;</code>
+    next to this lesson’s route.
+  </p>
+</section>
