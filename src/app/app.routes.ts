@@ -9,6 +9,7 @@ import { PropertyBindingConcept } from './features/concepts/property-binding/pro
 import { RoutingDemoScreenA } from './features/concepts/routing-intro/demo-screen-a';
 import { RoutingDemoScreenB } from './features/concepts/routing-intro/demo-screen-b';
 import { RoutingIntroConcept } from './features/concepts/routing-intro/routing-intro';
+import { RxjsIntroConcept } from './features/concepts/rxjs-intro/rxjs-intro';
 import { SignalsIntroConcept } from './features/concepts/signals-intro/signals-intro';
 import { Home } from './features/home/home';
 
@@ -31,5 +32,6 @@ export const routes: Routes = [
       { path: 'screen-b', component: RoutingDemoScreenB },
     ],
   },
+  { path: 'concepts/rxjs', component: RxjsIntroConcept },
   { path: '**', redirectTo: '' },
 ];

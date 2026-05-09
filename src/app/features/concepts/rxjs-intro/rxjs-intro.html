@@ -1,0 +1,25 @@
+<section class="concept-page">
+  <h2 class="topic-title">RxJS (<code>Observable</code> + <code>async</code> pipe)</h2>
+  <p class="explain">
+    Angular ships with <strong>RxJS</strong>. An <code>Observable</code> is a lazy stream: nothing runs until something
+    <strong>subscribes</strong>. In templates, the <code>async</code> pipe subscribes for you and passes the latest
+    value into the view — and it <strong>unsubscribes</strong> when the component is destroyed (fewer memory leaks).
+  </p>
+  <pre class="snippet"><code>{{ streamSnippet }}</code></pre>
+  <p class="explain">
+    Bind the stream with the pipe so Angular unwraps each emission:
+    <code>{{ templateSnippet }}</code>
+  </p>
+  <div class="demo rx-demo">
+    <!-- ★ THIS LESSON: async pipe → subscribe + latest value + teardown on destroy -->
+    <p class="tick-line">
+      <strong>Live counter:</strong>
+      <span class="tick-value">{{ ticker$ | async }}</span>
+    </p>
+    <p class="hint">Blank at first — the timer has not emitted yet. After 20 ticks the stream completes.</p>
+  </div>
+  <p class="note">
+    Real apps often use <code>HttpClient</code> (returns Observables) or <code>computed/toSignal</code> when mixing RxJS
+    with signals — start here, then layer those patterns when you need them.
+  </p>
+</section>

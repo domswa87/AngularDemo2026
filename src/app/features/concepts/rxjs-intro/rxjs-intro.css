@@ -1,0 +1,23 @@
+.rx-demo {
+  padding-top: 0.25rem;
+}
+
+.tick-line {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.tick-value {
+  display: inline-block;
+  min-width: 2rem;
+  margin-left: 0.35rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.hint {
+  margin: 0.75rem 0 0;
+  font-size: 0.9rem;
+  color: #64748b;
+}
